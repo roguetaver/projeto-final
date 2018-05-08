@@ -1,9 +1,10 @@
 # -*- coding: utf-8 -*-
 """
-Created on Thu May  3 13:26:42 2018
+Created on Tue May  8 16:56:43 2018
 
-@author: mihan
+@author: andre
 """
+
 import pygame
 
 class Cavalinho(pygame.sprite.Sprite):
