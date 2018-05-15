@@ -1,0 +1,12 @@
+no inicio
+tempo_cavalo_vencedor = 0
+print(tempo_cavalo_vencedor)   no console
+no while rodando
+if not init:
+        
+        tempo = str("%.2f" % tempo_cavalo_vencedor)
+        tela.blit(font.render(tempo, True, (0, 0, 0)), (130,0))
+        pygame.display.update()   
+        movimento (cavalinho1,cavalinho2,cavalinho3,cavalinho4,cavalinho5,cavalinho6)
+        if cavalinho1.rect.x >= 1083 and cavalinho2.rect.x >= 1083 and cavalinho3.rect.x >= 1083 and cavalinho4.rect.x >= 1083 and cavalinho5.rect.x >= 1083 and cavalinho6.rect.x >= 1083:
+            tempo_cavalo_vencedor = Stop
