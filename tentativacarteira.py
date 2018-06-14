@@ -285,118 +285,129 @@ while rodando:
         tela.blit(font2.render(str(carteira6), True, (0, 0, 0)), (752,43))
 
        #testa se o cavalinho da escolha ganhou, e gera uma mensagem com a resposta na tela
-        if cavalinho1.rect.x>=linha and chegada:
-            if cavalinho2.rect.x<linha and cavalinho3.rect.x<linha and cavalinho4.rect.x<linha and cavalinho5.rect.x<linha and cavalinho6.rect.x<linha:
-                if carteira1 > 0:
-                    carteira1 += 50
-                if carteira2 > 0:
-                    carteira2 -= 10
-                if carteira3 > 0:
-                    carteira3 -= 10
-                if carteira4 > 0:
-                    carteira4 -= 10
-                if carteira5 > 0:
-                    carteira5 -= 10
-                if carteira6 > 0:
-                    carteira6 -= 10
+        if chegada:
+            if cavalinho1.rect.x>=linha :
                 acaba = True
                 chegada = False
-                vitoria1 = True
-                
-                
-                
-        elif  cavalinho2.rect.x>=linha and chegada:
-            if cavalinho1.rect.x<linha and cavalinho3.rect.x<linha and cavalinho4.rect.x<linha and cavalinho5.rect.x<linha and cavalinho6.rect.x<linha:
-                if carteira2 > 0:
-                    carteira2 += 50
-                if carteira6 > 0:
-                    carteira6 -= 10
-                if carteira3 > 0:
-                    carteira3 -= 10
-                if carteira4 > 0:
-                    carteira4 -= 10
-                if carteira5 > 0:
-                    carteira5 -= 10
-                if carteira1 > 0:
-                    carteira1 -= 10
+                if cavalinho2.rect.x<linha and cavalinho3.rect.x<linha and cavalinho4.rect.x<linha and cavalinho5.rect.x<linha and cavalinho6.rect.x<linha:
+                    if carteira1 > 0:
+                        carteira1 += 50
+                    if carteira2 > 0:
+                        carteira2 -= 10
+                    if carteira3 > 0:
+                        carteira3 -= 10
+                    if carteira4 > 0:
+                        carteira4 -= 10
+                    if carteira5 > 0:
+                        carteira5 -= 10
+                    if carteira6 > 0:
+                        carteira6 -= 10
+                    acaba = True
+                    chegada = False
+                    vitoria1 = True
+                    
+                    
+                    
+            elif  cavalinho2.rect.x>=linha :
                 acaba = True
                 chegada = False
-                vitoria2 = True
-                
-        elif  cavalinho3.rect.x>=linha and chegada:
-            if cavalinho2.rect.x<linha and cavalinho1.rect.x<linha and cavalinho4.rect.x<linha and cavalinho5.rect.x<linha and cavalinho6.rect.x<linha:
-                if carteira3 > 0:
-                    carteira3 += 50
-                if carteira2 > 0:
-                    carteira2 -= 10
-                if carteira6 > 0:
-                    carteira6 -= 10
-                if carteira4 > 0:
-                    carteira4 -= 10
-                if carteira5 > 0:
-                    carteira5 -= 10
-                if carteira1 > 0:
-                    carteira1 -= 10
+                if cavalinho1.rect.x<linha and cavalinho3.rect.x<linha and cavalinho4.rect.x<linha and cavalinho5.rect.x<linha and cavalinho6.rect.x<linha:
+                    if carteira2 > 0:
+                        carteira2 += 50
+                    if carteira6 > 0:
+                        carteira6 -= 10
+                    if carteira3 > 0:
+                        carteira3 -= 10
+                    if carteira4 > 0:
+                        carteira4 -= 10
+                    if carteira5 > 0:
+                        carteira5 -= 10
+                    if carteira1 > 0:
+                        carteira1 -= 10
+                    acaba = True
+                    chegada = False
+                    vitoria2 = True
+                    
+            elif  cavalinho3.rect.x>=linha :
                 acaba = True
                 chegada = False
-                vitoria3 = True
-                
-        elif  cavalinho4.rect.x>=linha and chegada:
-            if cavalinho2.rect.x<linha and cavalinho3.rect.x<linha and cavalinho1.rect.x<linha and cavalinho5.rect.x<linha and cavalinho6.rect.x<linha:
-                if carteira4 > 0:
-                    carteira4 += 50
-                if carteira2 > 0:
-                    carteira2 -= 10
-                if carteira3 > 0:
-                    carteira3 -= 10
-                if carteira6 > 0:
-                    carteira6 -= 10
-                if carteira5 > 0:
-                    carteira5 -= 10
-                if carteira1 > 0:
-                    carteira1 -= 10
+                if cavalinho2.rect.x<linha and cavalinho1.rect.x<linha and cavalinho4.rect.x<linha and cavalinho5.rect.x<linha and cavalinho6.rect.x<linha:
+                    if carteira3 > 0:
+                        carteira3 += 50
+                    if carteira2 > 0:
+                        carteira2 -= 10
+                    if carteira6 > 0:
+                        carteira6 -= 10
+                    if carteira4 > 0:
+                        carteira4 -= 10
+                    if carteira5 > 0:
+                        carteira5 -= 10
+                    if carteira1 > 0:
+                        carteira1 -= 10
+                    acaba = True
+                    chegada = False
+                    vitoria3 = True
+                    
+            elif  cavalinho4.rect.x>=linha :
                 acaba = True
                 chegada = False
-                vitoria4 = True
-                
-        elif  cavalinho5.rect.x>=linha and chegada:
-            if cavalinho2.rect.x<linha and cavalinho3.rect.x<linha and cavalinho4.rect.x<linha and cavalinho1.rect.x<linha and cavalinho6.rect.x<linha:
-                if carteira5 > 0:
-                    carteira5 += 50
-                if carteira2 > 0:
-                    carteira2 -= 10
-                if carteira3 > 0:
-                    carteira3 -= 10
-                if carteira4 > 0:
-                    carteira4 -= 10
-                if carteira6 > 0:
-                    carteira6 -= 10
-                if carteira1 > 0:
-                    carteira1 -= 10
+                if cavalinho2.rect.x<linha and cavalinho3.rect.x<linha and cavalinho1.rect.x<linha and cavalinho5.rect.x<linha and cavalinho6.rect.x<linha:
+                    if carteira4 > 0:
+                        carteira4 += 50
+                    if carteira2 > 0:
+                        carteira2 -= 10
+                    if carteira3 > 0:
+                        carteira3 -= 10
+                    if carteira6 > 0:
+                        carteira6 -= 10
+                    if carteira5 > 0:
+                        carteira5 -= 10
+                    if carteira1 > 0:
+                        carteira1 -= 10
+                    acaba = True
+                    chegada = False
+                    vitoria4 = True
+                    
+            elif  cavalinho5.rect.x>=linha:
                 acaba = True
                 chegada = False
-                vitoria5 = True
-                
-        elif  cavalinho6.rect.x>=linha and chegada:
-            if cavalinho2.rect.x<linha and cavalinho3.rect.x<linha and cavalinho4.rect.x<linha and cavalinho5.rect.x<linha and cavalinho1.rect.x<linha:
-                if carteira6 > 0:
-                    carteira6 += 50
-                if carteira2 > 0:
-                    carteira2 -= 10
-                if carteira3 > 0:
-                    carteira3 -= 10
-                if carteira4 > 0:
-                    carteira4 -= 10
-                if carteira5 > 0:
-                    carteira5 -= 10
-                if carteira1 > 0:
-                    carteira1 -= 10
+                if cavalinho2.rect.x<linha and cavalinho3.rect.x<linha and cavalinho4.rect.x<linha and cavalinho1.rect.x<linha and cavalinho6.rect.x<linha and chegada1:
+                    if carteira5 > 0:
+                        carteira5 += 50
+                    if carteira2 > 0:
+                        carteira2 -= 10
+                    if carteira3 > 0:
+                        carteira3 -= 10
+                    if carteira4 > 0:
+                        carteira4 -= 10
+                    if carteira6 > 0:
+                        carteira6 -= 10
+                    if carteira1 > 0:
+                        carteira1 -= 10
+                    acaba = True
+                    chegada = False
+                    vitoria5 = True
+                    
+            elif  cavalinho6.rect.x>=linha:
                 acaba = True
                 chegada = False
-                vitoria6 = True
-        elif cavalinho1.rect.x > linha or cavalinho2.rect.x > linha or cavalinho3.rect.x > linha or cavalinho4.rect.x > linha or cavalinho5.rect.x > linha or cavalinho6.rect.x > linha:
-                acaba = True
-                chegada = False
+                if cavalinho2.rect.x<linha and cavalinho3.rect.x<linha and cavalinho4.rect.x<linha and cavalinho5.rect.x<linha and cavalinho1.rect.x<linha:
+                    if carteira6 > 0:
+                        carteira6 += 50
+                    if carteira2 > 0:
+                        carteira2 -= 10
+                    if carteira3 > 0:
+                        carteira3 -= 10
+                    if carteira4 > 0:
+                        carteira4 -= 10
+                    if carteira5 > 0:
+                        carteira5 -= 10
+                    if carteira1 > 0:
+                        carteira1 -= 10
+                    acaba = True
+                    chegada = False
+                    vitoria6 = True
+           
                 
         
         
@@ -615,118 +626,130 @@ while rodando:
         tela.blit(font2.render(str(carteira6), True, (0, 0, 0)), (752,43))
 
        #testa se o cavalinho da escolha ganhou, e gera uma mensagem com a resposta na tela
-        if cavalinho1.rect.x>=linha and chegada1:
-            if cavalinho2.rect.x<linha and cavalinho3.rect.x<linha and cavalinho4.rect.x<linha and cavalinho5.rect.x<linha and cavalinho6.rect.x<linha:
-                if carteira1 > 0:
-                    carteira1 += 50
-                if carteira2 > 0:
-                    carteira2 -= 10
-                if carteira3 > 0:
-                    carteira3 -= 10
-                if carteira4 > 0:
-                    carteira4 -= 10
-                if carteira5 > 0:
-                    carteira5 -= 10
-                if carteira6 > 0:
-                    carteira6 -= 10
+        if chegada1:
+            if cavalinho1.rect.x>=linha :
                 acaba1 = True
                 chegada1 = False
-                vitoria1 = True
-                
-                
-                
-        elif  cavalinho2.rect.x>=linha and chegada1:
-            if cavalinho1.rect.x<linha and cavalinho3.rect.x<linha and cavalinho4.rect.x<linha and cavalinho5.rect.x<linha and cavalinho6.rect.x<linha:
-                if carteira2 > 0:
-                    carteira2 += 50
-                if carteira6 > 0:
-                    carteira6 -= 10
-                if carteira3 > 0:
-                    carteira3 -= 10
-                if carteira4 > 0:
-                    carteira4 -= 10
-                if carteira5 > 0:
-                    carteira5 -= 10
-                if carteira1 > 0:
-                    carteira1 -= 10
+                if cavalinho2.rect.x<linha and cavalinho3.rect.x<linha and cavalinho4.rect.x<linha and cavalinho5.rect.x<linha and cavalinho6.rect.x<linha:
+                    if carteira1 > 0:
+                        carteira1 += 50
+                    if carteira2 > 0:
+                        carteira2 -= 10
+                    if carteira3 > 0:
+                        carteira3 -= 10
+                    if carteira4 > 0:
+                        carteira4 -= 10
+                    if carteira5 > 0:
+                        carteira5 -= 10
+                    if carteira6 > 0:
+                        carteira6 -= 10
+                    acaba1 = True
+                    chegada1 = False
+                    vitoria1 = True
+                    
+                    
+                    
+            elif  cavalinho2.rect.x>=linha :
                 acaba1 = True
                 chegada1 = False
-                vitoria2 = True
-                
-        elif  cavalinho3.rect.x>=linha and chegada1:
-            if cavalinho2.rect.x<linha and cavalinho1.rect.x<linha and cavalinho4.rect.x<linha and cavalinho5.rect.x<linha and cavalinho6.rect.x<linha:
-                if carteira3 > 0:
-                    carteira3 += 50
-                if carteira2 > 0:
-                    carteira2 -= 10
-                if carteira6 > 0:
-                    carteira6 -= 10
-                if carteira4 > 0:
-                    carteira4 -= 10
-                if carteira5 > 0:
-                    carteira5 -= 10
-                if carteira1 > 0:
-                    carteira1 -= 10
+                if cavalinho1.rect.x<linha and cavalinho3.rect.x<linha and cavalinho4.rect.x<linha and cavalinho5.rect.x<linha and cavalinho6.rect.x<linha:
+                    if carteira2 > 0:
+                        carteira2 += 50
+                    if carteira6 > 0:
+                        carteira6 -= 10
+                    if carteira3 > 0:
+                        carteira3 -= 10
+                    if carteira4 > 0:
+                        carteira4 -= 10
+                    if carteira5 > 0:
+                        carteira5 -= 10
+                    if carteira1 > 0:
+                        carteira1 -= 10
+                    acaba1 = True
+                    chegada1 = False
+                    vitoria2 = True
+                    
+            elif  cavalinho3.rect.x>=linha :
                 acaba1 = True
                 chegada1 = False
-                vitoria3 = True
-                
-        elif  cavalinho4.rect.x>=linha and chegada1:
-            if cavalinho2.rect.x<linha and cavalinho3.rect.x<linha and cavalinho1.rect.x<linha and cavalinho5.rect.x<linha and cavalinho6.rect.x<linha:
-                if carteira4 > 0:
-                    carteira4 += 50
-                if carteira2 > 0:
-                    carteira2 -= 10
-                if carteira3 > 0:
-                    carteira3 -= 10
-                if carteira6 > 0:
-                    carteira6 -= 10
-                if carteira5 > 0:
-                    carteira5 -= 10
-                if carteira1 > 0:
-                    carteira1 -= 10
+                if cavalinho2.rect.x<linha and cavalinho1.rect.x<linha and cavalinho4.rect.x<linha and cavalinho5.rect.x<linha and cavalinho6.rect.x<linha:
+                    if carteira3 > 0:
+                        carteira3 += 50
+                    if carteira2 > 0:
+                        carteira2 -= 10
+                    if carteira6 > 0:
+                        carteira6 -= 10
+                    if carteira4 > 0:
+                        carteira4 -= 10
+                    if carteira5 > 0:
+                        carteira5 -= 10
+                    if carteira1 > 0:
+                        carteira1 -= 10
+                    acaba1 = True
+                    chegada1 = False
+                    vitoria3 = True
+                    
+            elif  cavalinho4.rect.x>=linha :
                 acaba1 = True
                 chegada1 = False
-                vitoria4 = True
-                
-        elif  cavalinho5.rect.x>=linha and chegada1:
-            if cavalinho2.rect.x<linha and cavalinho3.rect.x<linha and cavalinho4.rect.x<linha and cavalinho1.rect.x<linha and cavalinho6.rect.x<linha and chegada1:
-                if carteira5 > 0:
-                    carteira5 += 50
-                if carteira2 > 0:
-                    carteira2 -= 10
-                if carteira3 > 0:
-                    carteira3 -= 10
-                if carteira4 > 0:
-                    carteira4 -= 10
-                if carteira6 > 0:
-                    carteira6 -= 10
-                if carteira1 > 0:
-                    carteira1 -= 10
+                if cavalinho2.rect.x<linha and cavalinho3.rect.x<linha and cavalinho1.rect.x<linha and cavalinho5.rect.x<linha and cavalinho6.rect.x<linha:
+                    if carteira4 > 0:
+                        carteira4 += 50
+                    if carteira2 > 0:
+                        carteira2 -= 10
+                    if carteira3 > 0:
+                        carteira3 -= 10
+                    if carteira6 > 0:
+                        carteira6 -= 10
+                    if carteira5 > 0:
+                        carteira5 -= 10
+                    if carteira1 > 0:
+                        carteira1 -= 10
+                    acaba1 = True
+                    chegada1 = False
+                    vitoria4 = True
+                    
+            elif  cavalinho5.rect.x>=linha:
                 acaba1 = True
                 chegada1 = False
-                vitoria5 = True
-                
-        elif  cavalinho6.rect.x>=linha and chegada1:
-            if cavalinho2.rect.x<linha and cavalinho3.rect.x<linha and cavalinho4.rect.x<linha and cavalinho5.rect.x<linha and cavalinho1.rect.x<linha:
-                if carteira6 > 0:
-                    carteira6 += 50
-                if carteira2 > 0:
-                    carteira2 -= 10
-                if carteira3 > 0:
-                    carteira3 -= 10
-                if carteira4 > 0:
-                    carteira4 -= 10
-                if carteira5 > 0:
-                    carteira5 -= 10
-                if carteira1 > 0:
-                    carteira1 -= 10
+                if cavalinho2.rect.x<linha and cavalinho3.rect.x<linha and cavalinho4.rect.x<linha and cavalinho1.rect.x<linha and cavalinho6.rect.x<linha and chegada1:
+                    if carteira5 > 0:
+                        carteira5 += 50
+                    if carteira2 > 0:
+                        carteira2 -= 10
+                    if carteira3 > 0:
+                        carteira3 -= 10
+                    if carteira4 > 0:
+                        carteira4 -= 10
+                    if carteira6 > 0:
+                        carteira6 -= 10
+                    if carteira1 > 0:
+                        carteira1 -= 10
+                    acaba1 = True
+                    chegada1 = False
+                    vitoria5 = True
+                    
+            elif  cavalinho6.rect.x>=linha:
                 acaba1 = True
                 chegada1 = False
-                vitoria6 = True
-        elif cavalinho1.rect.x > linha or cavalinho2.rect.x > linha or cavalinho3.rect.x > linha or cavalinho4.rect.x > linha or cavalinho5.rect.x > linha or cavalinho6.rect.x > linha:
-            chegada1 = False
-            acaba1 = True
+                if cavalinho2.rect.x<linha and cavalinho3.rect.x<linha and cavalinho4.rect.x<linha and cavalinho5.rect.x<linha and cavalinho1.rect.x<linha:
+                    if carteira6 > 0:
+                        carteira6 += 50
+                    if carteira2 > 0:
+                        carteira2 -= 10
+                    if carteira3 > 0:
+                        carteira3 -= 10
+                    if carteira4 > 0:
+                        carteira4 -= 10
+                    if carteira5 > 0:
+                        carteira5 -= 10
+                    if carteira1 > 0:
+                        carteira1 -= 10
+                    acaba1 = True
+                    chegada1 = False
+                    vitoria6 = True
+            
+            
         if acaba1:    
             continuar = 'APERTE ESPAÇO PARA CONTINUAR'
             tela.blit(font2.render(continuar, True, (0, 0, 0)), (350,600))
