@@ -13,7 +13,7 @@ class Cavalinho(pygame.sprite.Sprite):
     pygame.sprite.Sprite.__init__(self)
     self.vx = vel_x
     imagem=pygame.image.load(arquivo_imagem)
-    self.image = pygame.transform.scale(imagem,(193,133))
+    self.image = pygame.transform.scale(imagem,(220,160))
     self.rect = self.image.get_rect()
     self.rect.x = pos_x
     self.rect.y = pos_y
